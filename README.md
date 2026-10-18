@@ -8,10 +8,11 @@ It also supports a contract-driven approach: specify your requirements as a [dat
 
 ## Skills
 
-The plugin ships seven skills:
+The plugin ships eight skills:
 
 - **[dataproduct-bootstrap](https://github.com/dataproduct-skills/dataproduct-builder-dbt-bigquery/blob/main/skills/dataproduct-bootstrap/SKILL.md)** scaffolds a new dbt data product from scratch: `dbt_project.yml`, model layout, README, `profiles.yml.example`, and more.
 - **[dataproduct-implement](https://github.com/dataproduct-skills/dataproduct-builder-dbt-bigquery/blob/main/skills/dataproduct-implement/SKILL.md)** analyzes the data product input and output data contract, and implements the dbt models.
+- **[dataproduct-dbt](https://github.com/dataproduct-skills/dataproduct-builder-dbt-bigquery/blob/main/skills/dataproduct-dbt/SKILL.md)** builds the staging and intermediate layers following dbt best practices, and runs dbt.
 - **[dataproduct-exampledata](https://github.com/dataproduct-skills/dataproduct-builder-dbt-bigquery/blob/main/skills/dataproduct-exampledata/SKILL.md)** extracts sample rows, drops PII columns flagged in the contract (and obvious name-based PII), and uploads the scrubbed sample to Entropy Data. 
 - **[datacontract-edit](https://github.com/dataproduct-skills/dataproduct-builder-dbt-bigquery/blob/main/skills/datacontract-edit/SKILL.md)** edits an output-port `models/output_ports/v<N>/*.odcs.yaml` using natural language.
 - **[datacontract-test](https://github.com/dataproduct-skills/dataproduct-builder-dbt-bigquery/blob/main/skills/datacontract-test/SKILL.md)** runs `datacontract test` to verify the live BigQuery data still matches the schema and quality rules. 
