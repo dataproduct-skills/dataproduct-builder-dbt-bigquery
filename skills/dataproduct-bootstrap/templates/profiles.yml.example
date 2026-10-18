@@ -1,0 +1,13 @@
+{{DBT_PROJECT_NAME}}:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth                # uses Application Default Credentials: gcloud auth application-default login
+      project: {{PROJECT}}
+      dataset: {{DATASET}}
+      location: {{LOCATION}}
+      threads: 4
+      # Service account instead of OAuth:
+      # method: service-account
+      # keyfile: <fill in: path to the service account key file>

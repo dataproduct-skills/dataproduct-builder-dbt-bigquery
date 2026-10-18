@@ -1,0 +1,37 @@
+{
+  "name": "dataproduct-builder-dbt-bigquery",
+  "owner": {
+    "name": "Entropy Data",
+    "email": "hello@entropy-data.com"
+  },
+  "description": "Coding-agent plugins from Entropy Data.",
+  "plugins": [
+    {
+      "name": "dataproduct-builder-dbt-bigquery",
+      "source": {
+        "source": "github",
+        "repo": "dataproduct-skills/dataproduct-builder-dbt-bigquery"
+      },
+      "description": "Build data products with dbt on Google BigQuery and integrate them with Entropy Data.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Entropy Data",
+        "url": "https://entropy-data.com"
+      },
+      "homepage": "https://github.com/dataproduct-skills/dataproduct-builder-dbt-bigquery",
+      "repository": "https://github.com/dataproduct-skills/dataproduct-builder-dbt-bigquery",
+      "license": "MIT",
+      "keywords": [
+        "dbt",
+        "bigquery",
+        "data-product",
+        "data-contract",
+        "entropy-data",
+        "odcs",
+        "odps",
+        "openlineage"
+      ],
+      "category": "Data"
+    }
+  ]
+}
